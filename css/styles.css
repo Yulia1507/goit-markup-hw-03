@@ -118,13 +118,13 @@ max-width: 1158px;
 
 
 /** ============== HERO ============ */
-.hero {
-    padding-bottom: 188px 0;
+.hero { 
+    padding: 188px 0 188px;
 }
 
 .hero-container {
     background-color: #2E2F42;
-    padding: 188px 316px 292px 316px;
+    
 }
 .hero-title {
     color: #FFF;
@@ -155,12 +155,10 @@ display: flex;
     background-color: #4D5AE5;
     cursor: pointer;
     border-radius: 4px;
-    background-color: var(--IRIS, #4D5AE5);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     display: block;
     min-width: 169px;
-    height: 56px;;
+    height: 56px;
 }
 
 .hero-order-btn:hover, .hero-order-btn:focus {
@@ -192,6 +190,10 @@ display: flex;
 .benefits-list {
     display: flex;
     gap: 24px;
+   
+}
+
+.benefits-item {
     width: calc((100% - 72px) / 4);
 }
 
@@ -235,13 +237,12 @@ display: flex;
 .team-list {
     display: flex;
     gap: 24px;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-
 }
 
 .team-item {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-initials{ 
@@ -292,8 +293,6 @@ display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    width: calc((100% - 48px) / 3);
-
 }
 
 .portfolio-add {
@@ -305,7 +304,9 @@ margin-bottom: 8px;
 }
 
 .portfolio-item {border: 1px solid var(--CORNFLOWER, #E7E9FC);
-background: var(--WHITE, #FFF);}
+background: var(--WHITE, #FFF);
+width: calc((100% - 48px) / 3);
+}
 
 
 .portfolio-subtitle {
@@ -347,7 +348,7 @@ background: var(--WHITE, #FFF);}
         text-transform: uppercase;
         margin-bottom: 17.5px;
         display: inline-block;
-        margin-bottom: 16px;
+        
 }
 
 .footer-text {
